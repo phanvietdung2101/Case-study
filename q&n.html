@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QnA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="contain">
+    <div id="top-right-ele">
+        <div>
+            <button class="btn count-down" id="countDown"></button>
+            <button class="btn fifty-button" id="fiftyButton" onclick="fiftyButton()">50/50</button>
+            <button class="btn survey-button" id="surveyButton" onclick="surveyButton()">Survey</button>
+            <button class="btn point" id="point"></button>
+            <span id="survey"></span>
+        </div>
+    </div>
+    <div id = "each-question">
+        <div id = "question"></div>
+        <div id = "answer">
+            <table>
+                <tr>
+                    <td><div class="box" id="boxA"></div></td>
+                    <td><div class="box" id="boxB"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="box" id="boxC"></div></td>
+                    <td><div class="box" id="boxD"></div></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div id = "button">
+            <button class="btn confirm" id="confirm" style="display: block" onclick="confirm()">Tôi chắc chắn</button>
+            <div class="notice">
+                <div class="alert" id="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/question.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

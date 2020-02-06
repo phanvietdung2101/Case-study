@@ -1,0 +1,138 @@
+body{
+    margin: 50px;
+}
+element.style {
+    background-color: rgb(52, 152, 219);
+    pointer-events: auto;
+}
+#each-question {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 435px;
+
+}
+#question {
+    margin-bottom:20px;
+    color: #FFFFFF;
+    border-radius: 2em 2em 2em 2em;
+    -moz-border-radius: 2em 2em 2em 2em;
+    -webkit-border-radius: 2em 2em 2em 2em;
+    border: 0px solid #000000;
+    line-height: 100px;
+    height:100px;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    background-color:#27ae60;
+    text-transform: capitalize;
+}
+#question:hover {
+    background-color: #2ecc71;
+}
+.box:hover {
+    background-color: #2980b9;
+}
+
+.box {
+    display: inline-block;
+    background-color: #3498db;
+    color: #FFFFFF;
+    border-radius: 2em 2em;
+    line-height: 50px;
+    height: 50px;
+    width: 395px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.count-down {
+    background-color: orange;
+    float:right;
+}
+.point {
+    background-color: #2ecc71;
+    float: right;
+}
+
+.chooseBox {
+    background-color: yellowgreen;
+}
+.chooseBox:hover {
+    background-color: yellowgreen;
+}
+.confirm {
+    margin: 0 auto;
+}
+.answerBox{
+    background-color: orangered;
+}
+.answerBox:hover {
+    background-color: orangered;
+}
+.failureAlert {
+    background-color: #F2DEDE;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 35px;
+    font-weight: lighter;
+    color: orangered;
+}
+.successAlert {
+    background-color: #DFF0D8;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 35px;
+    font-weight: lighter;
+    color: #3c763d;
+}
+h1 {
+    text-align: center;
+}
+#contain {
+    margin: 2px;
+    width: 1366px;
+    height: 761px;
+    background-image: url("img/image.png");
+}
+#top-right-ele {
+
+}
+#survey {
+    color: greenyellow;
+}
+.fifty-button {
+    background-color: #27ae60;
+}
+.fifty-button:hover {
+    background-color: #2ecc71;
+}
+.survey-button {
+    background-color: #27ae60;
+}
+.survey-button:hover {
+    background-color: #2ecc71;
+}
