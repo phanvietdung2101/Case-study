@@ -5,6 +5,7 @@ let Game = function () {
     this.stage = 0;
     this.answer = "";
     this.point = 0;
+    this.themeAudio = new Audio("audio/theme.mp3");
 
     this.showQuestion = function () {
         document.getElementById("question").innerHTML = QUESTION[this.stage].question;
@@ -12,6 +13,7 @@ let Game = function () {
         document.getElementById("boxB").innerHTML = QUESTION[this.stage].answer.B;
         document.getElementById("boxC").innerHTML = QUESTION[this.stage].answer.C;
         document.getElementById("boxD").innerHTML = QUESTION[this.stage].answer.D;
+        this.themeAudio.play();
     };
 
     this.showPoint = function () {
@@ -33,6 +35,7 @@ let Game = function () {
     };
 
     this.checkAnswer = function () {
+        this.themeAudio.pause();
         let successAudio = new Audio('audio/correct answer.mp3');
         let failureAudio = new Audio("audio/wrong answer.mp3");
         if(this.answer == QUESTION[this.stage].correct)

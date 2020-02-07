@@ -1,14 +1,11 @@
 
 const TIME = 60;
-
 function confirm() {
     document.getElementById("confirm").style.display = "none";
     game.checkAnswer();
 }
 
 let game = new Game();
-let themeAudio = new Audio('audio/theme.mp3');
-themeAudio.play();
 game.showQuestion();
 game.showPoint();
 
@@ -97,3 +94,7 @@ function surveyButton() {
         document.getElementById("confirm").style.display = "block";
     }
 }
+
+
+
+
