@@ -6,8 +6,6 @@ function confirm() {
 }
 
 let game = new Game();
-game.showQuestion();
-game.showPoint();
 
 let boxA = document.getElementById("boxA");
 let boxB = document.getElementById("boxB");
@@ -40,21 +38,7 @@ function surveyButton() {
 
     document.getElementById("survey").innerText = str;
 }
-// Count Down
-{
-    let countDown = setInterval(function () {
-        game.time--;
-        document.getElementById("countDown").innerHTML = "Thời gian còn lại : " + game.time + "giây";
-    }, 1000);
 
-
-    function checkCountDown() {
-        if (game.time <= 0) {
-            game.reset();
-        }
-    };
-    setInterval(checkCountDown, 10);
-}
 // Click Event For Answer Box
 {
     boxA.addEventListener("click", function () {
@@ -94,7 +78,31 @@ function surveyButton() {
         document.getElementById("confirm").style.display = "block";
     }
 }
+// Start game
+{
+    function start() {
+        game.showQuestion();
+        game.showPoint();
+        game.time = TIME;
+        document.getElementById("start").style.display = "none";
+        document.getElementById("confirm").style.display = "block";
 
+        // Count Down
+        {
+            let countDown = setInterval(function () {
+                game.time--;
+                document.getElementById("countDown").innerHTML = "Thời gian còn lại : " + game.time + "giây";
+            }, 1000);
+
+        }
+    }
+    function checkCountDown() {
+        if (game.time <= 0) {
+            game.reset();
+        }
+    };
+    setInterval(checkCountDown, 10);
+}
 
 
 
